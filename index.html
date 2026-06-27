@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naina Kumari | IIT Patna CS & Data Analytics Student | Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of Naina Kumari, BS Computer Science and Data Analytics student at IIT Patna. Aspiring Data Scientist, Digital Marketer, and Web Developer.">
+  <meta name="keywords" content="Naina Kumari, IIT Patna, Data Science, Machine Learning, Web Developer, Digital Marketer, Portfolio, India">
+  <meta name="author" content="Naina Kumari">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://naina-kumari.github.io/">
+  <meta property="og:title" content="Naina Kumari | Portfolio">
+  <meta property="og:description" content="IIT Patna Student | Data Science Enthusiast | Digital Marketer | Web Developer. Explore my projects, certifications, and experience.">
+  <meta property="og:image" content="images/naina_profile.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Naina Kumari | Portfolio">
+  <meta property="twitter:description" content="IIT Patna Student | Data Science Enthusiast | Digital Marketer | Web Developer. Explore my projects, certifications, and experience.">
+  <meta property="twitter:image" content="images/naina_profile.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.400.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="light-theme">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Animated Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor" aria-hidden="true"></div>
+  <div id="custom-cursor-dot" aria-hidden="true"></div>
+
+  <!-- Loading Animation Overlay -->
+  <div id="loader">
+    <div class="loader-content">
+      <span class="loader-text">NAINA KUMARI</span>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       STICKY NAVBAR
+       ════════════════════════════════════════════ -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        Naina Kumari
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Social Icons -->
+        <div class="nav-socials">
+          <a href="https://github.com/its-nainajha123" target="_blank" aria-label="GitHub Profile" class="nav-social-icon brand-github"><i data-lucide="github"></i></a>
+        </div>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle light and dark mode">
+          <i data-lucide="moon" class="theme-icon-dark"></i>
+          <i data-lucide="sun" class="theme-icon-light"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Dropdown -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certificates</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- ════════════════════════════════════════════
+         HERO SECTION (Fullscreen)
+         ════════════════════════════════════════════ -->
+    <section id="hero" class="fullscreen-hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Card (Left Side) -->
+        <div class="hero-graphic">
+          <div class="profile-card-container">
+            <div class="profile-glow"></div>
+            <div class="profile-card glass-card">
+              <div class="profile-image-wrapper">
+                <img src="images/naina_profile.jpg" alt="Naina Kumari Portrait" class="profile-image">
+              </div>
+              <div class="profile-info">
+                <h3>Naina Kumari</h3>
+                <p>IIT Patna CSE '29</p>
+                <div class="profile-tags">
+                  <span class="badge">Data Scientist</span>
+                  <span class="badge">Web Dev</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Floating Tech Icons -->
+            <div class="floating-icon icon-1" title="Python"><i data-lucide="code-2"></i></div>
+            <div class="floating-icon icon-2" title="SQL"><i data-lucide="database"></i></div>
+            <div class="floating-icon icon-3" title="React"><i data-lucide="blocks"></i></div>
+            <div class="floating-icon icon-4" title="Data Analysis"><i data-lucide="line-chart"></i></div>
+            <div class="floating-icon icon-5" title="SEO"><i data-lucide="search"></i></div>
+          </div>
+        </div>
+
+        <!-- Hero Details (Right Side) -->
+        <div class="hero-details">
+          <p class="hero-pretitle">Hello, I'm</p>
+          
+          <h1 class="hero-title">
+            <span class="text-glow">Naina Kumari</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            IIT Patna Student <span class="divider">|</span> Data Science Enthusiast <span class="divider">|</span> Digital Marketer <span class="divider">|</span> Web Developer
+          </p>
+          
+          <p class="hero-description">
+            "Passionate about building impactful digital products, solving real-world problems through data, and helping businesses grow online."
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary magnetic-btn">
+              <span>View Projects</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         ABOUT ME SECTION
+         ════════════════════════════════════════════ -->
+    <section id="about" class="section-padding scroll-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lead-text">
+              Hello! I'm <strong>Naina Kumari</strong>, a first-year student pursuing a <strong>B.S. in Computer Science and Data Analytics at IIT Patna</strong>. My journey into technology has been driven by curiosity, continuous learning, and a desire to create meaningful digital experiences.
+            </p>
+            <p>
+              Coming from a background where opportunities had to be earned through persistence and self-learning, I developed a strong interest in problem-solving, data-driven thinking, and software development. Today, I am building my foundation in computer science through coursework in programming, mathematics, data analytics, and modern technologies.
+            </p>
+            <p>
+              Beyond academics, I actively explore real-world applications of technology through projects, internships, and independent learning. I have worked in digital marketing, data handling, and web development, gaining practical exposure to industry workflows while strengthening my analytical and technical skills.
+            </p>
+            <p>
+              At IIT Patna, I continue to expand my knowledge in computer science, data analytics, and emerging technologies. My academic journey has helped me develop a structured approach to learning, collaboration, and innovation.
+            </p>
+            <p>
+              I enjoy building websites, experimenting with new tools, understanding how technology solves real-world problems, and continuously improving my skills. My goal is to grow into a data scientist and technology professional who creates impactful solutions through data, software, and intelligent systems.
+            </p>
+            <p>
+              When I'm not studying or working on projects, I spend time reading spiritual literature, reflecting on personal growth, and exploring ideas that combine technology, learning, and purpose.
+            </p>
+            <p>
+              I believe that every project is an opportunity to learn, improve, and move one step closer toward creating meaningful impact through technology.
+            </p>
+          </div>
+
+          <div class="about-cards-container">
+            <div class="about-card glass-card">
+              <div class="card-icon"><i data-lucide="bar-chart-3"></i></div>
+              <h3>Data Science</h3>
+              <p>Analyzing datasets, performing EDA, and building models to extract valuable business insights.</p>
+            </div>
+            
+            <div class="about-card glass-card">
+              <div class="card-icon"><i data-lucide="code-2"></i></div>
+              <h3>Software Development</h3>
+              <p>Designing, writing, and maintaining clean, high-performance software systems.</p>
+            </div>
+            
+            <div class="about-card glass-card">
+              <div class="card-icon"><i data-lucide="cpu"></i></div>
+              <h3>Artificial Intelligence</h3>
+              <p>Studying foundational algorithms, deep learning models, and neural network research.</p>
+            </div>
+
+            <div class="about-card glass-card">
+              <div class="card-icon"><i data-lucide="brain-circuit"></i></div>
+              <h3>Machine Learning</h3>
+              <p>Developing intelligent models and predictive algorithms to solve complex data challenges.</p>
+            </div>
+
+            <div class="about-card glass-card">
+              <div class="card-icon"><i data-lucide="cloud"></i></div>
+              <h3>Cloud Computing</h3>
+              <p>Architecting and managing scalable applications in secure cloud environments.</p>
+            </div>
+
+            <div class="about-card glass-card">
+              <div class="card-icon"><i data-lucide="lightbulb"></i></div>
+              <h3>Problem Solving</h3>
+              <p>Applying data structures, algorithms, and analytical thinking to tackle complex problems.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         STATS SECTION
+         ════════════════════════════════════════════ -->
+    <section id="stats" class="section-padding stats-bg scroll-reveal">
+      <div class="container stats-container">
+        
+        <div class="stat-item">
+          <div class="stat-number" data-target="10">0</div>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Projects Completed</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number" data-target="6">0</div>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Certifications</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number" data-target="3">0</div>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Internships Done</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-number" data-target="100">0</div>
+          <span class="stat-plus">+</span>
+          <p class="stat-label">Hours of Learning</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         SKILLS SECTION
+         ════════════════════════════════════════════ -->
+    <section id="skills" class="section-padding scroll-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Skills Filter Controls -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="datascience">Data Science</button>
+          <button class="filter-btn" data-filter="webdev">Web Dev</button>
+          <button class="filter-btn" data-filter="marketing">Marketing</button>
+          <button class="filter-btn" data-filter="softskills">Soft Skills</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="skill-item glass-card" data-category="programming">
+            <span class="skill-icon"><i data-lucide="braces"></i></span>
+            <h3>Python</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="programming">
+            <span class="skill-icon"><i data-lucide="code-2"></i></span>
+            <h3>C</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="70%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="programming">
+            <span class="skill-icon"><i data-lucide="database"></i></span>
+            <h3>SQL</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-item glass-card" data-category="datascience">
+            <span class="skill-icon"><i data-lucide="table"></i></span>
+            <h3>Pandas & NumPy</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="datascience">
+            <span class="skill-icon"><i data-lucide="bar-chart-3"></i></span>
+            <h3>Data Visualization</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="datascience">
+            <span class="skill-icon"><i data-lucide="cpu"></i></span>
+            <h3>Machine Learning</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="65%"></div></div>
+          </div>
+
+          <!-- Web Dev -->
+          <div class="skill-item glass-card" data-category="webdev">
+            <span class="skill-icon"><i data-lucide="html5"></i></span>
+            <h3>HTML & CSS</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="webdev">
+            <span class="skill-icon"><i data-lucide="square-terminal"></i></span>
+            <h3>JavaScript</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="webdev">
+            <span class="skill-icon"><i data-lucide="atom"></i></span>
+            <h3>React</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="webdev">
+            <span class="skill-icon"><i data-lucide="globe"></i></span>
+            <h3>Next.js</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="70%"></div></div>
+          </div>
+
+          <!-- Marketing -->
+          <div class="skill-item glass-card" data-category="marketing">
+            <span class="skill-icon"><i data-lucide="search-code"></i></span>
+            <h3>SEO</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="marketing">
+            <span class="skill-icon"><i data-lucide="file-edit"></i></span>
+            <h3>Content Marketing</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="marketing">
+            <span class="skill-icon"><i data-lucide="instagram"></i></span>
+            <h3>Social Media Marketing</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="marketing">
+            <span class="skill-icon"><i data-lucide="shopping-cart"></i></span>
+            <h3>Amazon Listing</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-item glass-card" data-category="softskills">
+            <span class="skill-icon"><i data-lucide="message-square"></i></span>
+            <h3>Communication</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="softskills">
+            <span class="skill-icon"><i data-lucide="users"></i></span>
+            <h3>Leadership</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="softskills">
+            <span class="skill-icon"><i data-lucide="puzzle"></i></span>
+            <h3>Problem Solving</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="softskills">
+            <span class="skill-icon"><i data-lucide="handshake"></i></span>
+            <h3>Teamwork</h3>
+            <div class="skill-progress"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         EXPERIENCE SECTION
+         ════════════════════════════════════════════ -->
+    <section id="experience" class="section-padding experience-bg scroll-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-pretitle">MY JOURNEY</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Line -->
+          <div class="timeline-line"></div>
+
+          <!-- Intern Item 1 (Como) -->
+          <div class="timeline-item left scroll-reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Feb 2026 - Apr 2026</span>
+              <h3>Growth Intern</h3>
+              <h4 class="company-name">Como <span class="location">(California, USA - Remote)</span></h4>
+              <p>Designed growth strategies, analyzed user acquisition metrics, and managed digital marketing campaigns to scale application installs and user retention.</p>
+            </div>
+          </div>
+
+          <!-- Intern Item 2 (TalentYug) -->
+          <div class="timeline-item right scroll-reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Feb 2026 - Jun 2026</span>
+              <h3>HR Intern</h3>
+              <h4 class="company-name">TalentYug Private Limited <span class="location">(Patna, India)</span></h4>
+              <p>Assisted in talent acquisition workflows, candidate screening, interviewing operations, and recruitment support systems for technical roles.</p>
+            </div>
+          </div>
+
+          <!-- Intern Item 3 (Sovely) -->
+          <div class="timeline-item left scroll-reveal-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Apr 2026 - Jun 2026</span>
+              <h3>Digital Marketing Intern</h3>
+              <h4 class="company-name">Sovely <span class="location">(Bengaluru, India)</span></h4>
+              <p>Executed SEO optimizations to increase organic reach, promoted web platform, and managed Amazon product listings to maximize sales funnel efficiency.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         PROJECTS SECTION
+         ════════════════════════════════════════════ -->
+    <section id="projects" class="section-padding scroll-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-pretitle">MY CREATIONS</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1: UPVC -->
+          <div class="project-card glass-card scroll-reveal-item">
+            <div class="project-img-container">
+              <img src="images/upvc_project.png" alt="MS Prime UPVC Website Screenshot" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://msprime.co.in/" target="_blank" class="project-link-btn" title="Live Demo"><i data-lucide="external-link"></i></a>
+                  <a href="https://github.com/its-nainajha123" target="_blank" class="project-link-btn" title="GitHub Code"><i data-lucide="github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-category">Web Development / Business Site</span>
+              <h3>MS Prime UPVC Website</h3>
+              <p>A responsive, high-performance business website with products catalog, dealer mapping, and inquiries routing for an elite UPVC & aluminium hardware distributor.</p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2: Personal Portfolio -->
+          <div class="project-card glass-card scroll-reveal-item">
+            <div class="project-img-container">
+              <div class="project-img-placeholder gradient-glow-green">
+                <span class="placeholder-logo">PORTFOLIO</span>
+              </div>
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#hero" class="project-link-btn" title="Live Demo"><i data-lucide="external-link"></i></a>
+                  <a href="https://github.com/its-nainajha123" target="_blank" class="project-link-btn" title="GitHub Code"><i data-lucide="github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-category">Web Development / Portfolio</span>
+              <h3>Interactive Portfolio Website</h3>
+              <p>This premium portfolio website. Built with custom glassmorphism, animated counters, smooth canvas particles, a light/dark mode switch, and layout responsiveness.</p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">Vanilla CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Data Analytics Dashboard -->
+          <div class="project-card glass-card scroll-reveal-item">
+            <div class="project-img-container">
+              <img src="images/data_dashboard.png" alt="Data Analytics Dashboard Mockup" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/its-nainajha123" target="_blank" class="project-link-btn" title="Live Demo"><i data-lucide="external-link"></i></a>
+                  <a href="https://github.com/its-nainajha123" target="_blank" class="project-link-btn" title="GitHub Code"><i data-lucide="github"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-category">Data Science / Analytics</span>
+              <h3>Data Analytics Dashboard</h3>
+              <p>An interactive, user-friendly business dashboard showing marketing funnels, regional sales performance, and direct vs organic growth stats in real time.</p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">ChartJS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         CERTIFICATIONS SECTION
+         ════════════════════════════════════════════ -->
+    <section id="certifications" class="section-padding certifications-bg scroll-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-pretitle">ACHIEVEMENTS</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <!-- Certifications Grid -->
+        <div class="certs-grid">
+
+          <!-- Cert 1: Generative AI Outskill -->
+          <div class="cert-card glass-card scroll-reveal-item">
+            <div class="cert-card-icon"><i data-lucide="sparkles"></i></div>
+            <div class="cert-card-body">
+              <span class="cert-provider">Outskill</span>
+              <h3>Generative AI Mastermind</h3>
+              <p>Mastered Generative AI architectures, prompt engineering practices, and LLM-driven application designs for enterprise solutions.</p>
+            </div>
+          </div>
+
+          <!-- Cert 2: Professional Networking -->
+          <div class="cert-card glass-card scroll-reveal-item">
+            <div class="cert-card-icon"><i data-lucide="network"></i></div>
+            <div class="cert-card-body">
+              <span class="cert-provider">Specialized Program</span>
+              <h3>Professional Networking for Career Growth</h3>
+              <p>Mastered advanced communication methodologies, networking psychology, and collaborative strategies to expand career opportunities.</p>
+            </div>
+          </div>
+
+          <!-- Cert 3: AI Fluency -->
+          <div class="cert-card glass-card scroll-reveal-item">
+            <div class="cert-card-icon"><i data-lucide="brain-circuit"></i></div>
+            <div class="cert-card-body">
+              <span class="cert-provider">Anthropic</span>
+              <h3>AI Fluency: Framework &amp; Foundations</h3>
+              <p>Acquired core foundations, theoretical frameworks, and safety guardrails for deploying large language model architectures.</p>
+            </div>
+          </div>
+
+          <!-- Cert 4: Data Science & GenAI - PW Skills -->
+          <div class="cert-card glass-card scroll-reveal-item">
+            <div class="cert-card-icon"><i data-lucide="bar-chart-2"></i></div>
+            <div class="cert-card-body">
+              <span class="cert-provider">PW Skills &amp; Microsoft Collaboration</span>
+              <h3>Data Science &amp; Generative AI</h3>
+              <p>Hands-on exposure to Exploratory Data Analysis (EDA), Regression &amp; Classification algorithms, and AI workflows.</p>
+            </div>
+          </div>
+
+          <!-- Cert 5: Full-Stack Development -->
+          <div class="cert-card glass-card scroll-reveal-item">
+            <div class="cert-card-icon"><i data-lucide="code-2"></i></div>
+            <div class="cert-card-body">
+              <span class="cert-provider">"How Websites Really Work" Program</span>
+              <h3>Full-Stack Development</h3>
+              <p>In-depth understanding of internet protocols, browser rendering engines, client-server handshake, DOM manipulation, and responsive coding.</p>
+            </div>
+          </div>
+
+          <!-- Cert 6: Data Science Flipkart -->
+          <div class="cert-card glass-card scroll-reveal-item">
+            <div class="cert-card-icon"><i data-lucide="shopping-bag"></i></div>
+            <div class="cert-card-body">
+              <span class="cert-provider">Flipkart E-commerce Scale Program</span>
+              <h3>Data Science in E-commerce</h3>
+              <p>Learned how data science powers recommendation engines, real-time logistics scaling, and customer pricing optimization.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════
+         EDUCATION SECTION
+         ════════════════════════════════════════════ -->
+    <section id="education" class="section-padding scroll-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-pretitle">ACADEMICS</span>
+          <h2 class="section-title">Education</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="education-grid">
+          <!-- IIT Patna -->
+          <div class="edu-card glass-card scroll-reveal-item">
+            <div class="edu-badge"><i data-lucide="graduation-cap"></i></div>
+            <div class="edu-details">
+              <span class="edu-duration">Aug 2025 - Dec 2029 (Expected)</span>
+              <h3>Indian Institute of Technology, Patna</h3>
+              <h4>Bachelor of Science (BS) in Computer Science and Data Analytics</h4>
+              <p class="edu-location">Patna, Bihar, India</p>
+              <ul class="edu-bullets">
+                <li>Active learner in Data Science methods, algorithms, and computing environments.</li>
+                <li>Participating in coding sprints, hackathons, and growth internships.</li>
+                <li>Exploring ML, EDA, database queries, and system architectures.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Aspire Institute -->
+          <div class="edu-card glass-card scroll-reveal-item">
+            <div class="edu-badge"><i data-lucide="award"></i></div>
+            <div class="edu-details">
+              <span class="edu-duration">Feb 2026 - Apr 2026</span>
+              <h3>Aspire Institute</h3>
+              <h4>Educational Leadership and Administration</h4>
+              <p class="edu-location">International Remote Program</p>
+              <ul class="edu-bullets">
+                <li>Focused on leadership behaviors, public speaking, community engagement, and team coordination.</li>
+                <li>Collaborated with global peers on resolving structural communication challenges.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ════════════════════════════════════════════
+         CONTACT SECTION
+         ════════════════════════════════════════════ -->
+    <section id="contact" class="section-padding scroll-reveal">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-pretitle">LET'S CONNECT</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Have a project or opportunity?</h3>
+            <p>I am actively seeking internships and freelance projects in <strong>Data Science</strong>, <strong>Machine Learning</strong>, <strong>Web Development</strong>, and <strong>Digital Marketing</strong>. Drop a message, and let's build something awesome together!</p>
+            
+            <div class="info-details">
+              <div class="info-item">
+                <div class="info-icon brand-linkedin-icon"><i data-lucide="linkedin"></i></div>
+                <div class="info-text">
+                  <span>LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/naina-kumari-iitp?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">Connect on LinkedIn</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon brand-github-icon"><i data-lucide="github"></i></div>
+                <div class="info-text">
+                  <span>GitHub</span>
+                  <a href="https://github.com/its-nainajha123" target="_blank">github.com/its-nainajha123</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                <div class="info-text">
+                  <span>Location</span>
+                  <p>IIT Patna Campus, Bihta, Bihar, India</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-container">
+              <span>Connect on Socials</span>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/naina-kumari-iitp?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn Profile" class="brand-linkedin"><i data-lucide="linkedin"></i></a>
+                <a href="https://github.com/its-nainajha123" target="_blank" aria-label="GitHub Profile" class="brand-github"><i data-lucide="github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-container glass-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Collaboration / Job Offer" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Hey Naina, I'd love to talk about..." required></textarea>
+              </div>
+
+              <p class="form-note">Your message will be sent via LinkedIn. Please connect there!</p>
+              <a href="https://www.linkedin.com/in/naina-kumari-iitp?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="btn btn-primary submit-btn magnetic-btn">
+                <span>Message on LinkedIn</span>
+                <i data-lucide="linkedin" class="btn-send-icon"></i>
+              </a>
+            </form>
+            
+            <!-- Success Overlay -->
+            <div id="form-success" class="form-success-overlay">
+              <div class="success-message">
+                <i data-lucide="check-circle" class="success-icon"></i>
+                <h3>Thank You!</h3>
+                <p>Your message has been sent successfully. Naina will get back to you shortly.</p>
+                <button type="button" class="btn btn-outline" id="success-close-btn">Send Another Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <a href="#hero" class="footer-logo">
+          Naina Kumari
+        </a>
+        <p>IIT Patna CS & Data Analytics student passionate about turning data into insight and design into functional products.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials-col">
+        <h4>Follow Me</h4>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/naina-kumari-iitp?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn Profile" class="brand-linkedin"><i data-lucide="linkedin"></i></a>
+          <a href="https://github.com/its-nainajha123" target="_blank" aria-label="GitHub Profile" class="brand-github"><i data-lucide="github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>Designed and Developed by Naina Kumari &copy; 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script initialization -->
+  <script src="js/script.js"></script>
+</body>
+</html>
