@@ -379,7 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.10 });
 
   if (statsSection) {
     statsObserver.observe(statsSection);
@@ -565,6 +565,9 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         successOverlay.classList.add('show');
         
+        // Open LinkedIn in a new tab
+        window.open('https://www.linkedin.com/in/naina-kumari-iitp?utm_source=share_via&utm_content=profile&utm_medium=member_android', '_blank');
+        
         // Reset form inputs
         contactForm.reset();
         
@@ -577,7 +580,7 @@ document.addEventListener('DOMContentLoaded', () => {
           submitIcon.classList.remove('animate-spin');
           lucide.createIcons();
         }
-      }, 1500);
+      }, 1200);
     });
 
     if (successCloseBtn) {
