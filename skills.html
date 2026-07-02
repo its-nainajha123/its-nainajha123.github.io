@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Skills | Naina Kumari | IIT Patna CS & Data Analytics Student</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore Naina Kumari's technical expertise: Programming (Python, C, SQL), Data Science, Web Dev (React, Next.js), and Digital Marketing.">
+  <meta name="keywords" content="Naina Kumari, Technical Skills, Python, React, Next.js, SEO, Data Science, Machine Learning">
+  <meta name="author" content="Naina Kumari">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://its-nainajha123.github.io/skills.html">
+  <meta property="og:title" content="Skills | Naina Kumari Portfolio">
+  <meta property="og:description" content="View the technical capabilities and hands-on skill stack of Naina Kumari, student at IIT Patna.">
+  <meta property="og:image" content="images/naina_profile.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.400.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="light-theme">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Animated Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Custom Cursor -->
+  <div id="custom-cursor" aria-hidden="true"></div>
+  <div id="custom-cursor-dot" aria-hidden="true"></div>
+
+  <!-- Loading Animation Overlay -->
+  <div id="loader">
+    <div class="loader-content">
+      <span class="loader-text">NAINA KUMARI</span>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY NAVBAR -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        Naina Kumari
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Social Icons -->
+        <div class="nav-socials">
+          <a href="https://github.com/its-nainajha123" target="_blank" aria-label="GitHub Profile" class="nav-social-icon brand-github"><i data-lucide="github"></i></a>
+        </div>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle light and dark mode">
+          <i data-lucide="moon" class="theme-icon-dark"></i>
+          <i data-lucide="sun" class="theme-icon-light"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Dropdown -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Page Header Banner -->
+    <header class="page-header">
+      <div class="container">
+        <h1>Technical Stack</h1>
+        <p>A breakdown of my programming languages, frameworks, data tools, and soft skill proficiencies.</p>
+      </div>
+    </header>
+
+    <!-- Skills Filtering Grid Section -->
+    <section id="skills" class="subpage-content scroll-reveal">
+      <div class="container">
+        
+        <!-- Skills Filter Controls -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="datascience">Data Science</button>
+          <button class="filter-btn" data-filter="webdev">Web Dev</button>
+          <button class="filter-btn" data-filter="marketing">Marketing</button>
+          <button class="filter-btn" data-filter="softskills">Soft Skills</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="skill-item glass-card" data-category="programming">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="braces"></i></span>
+                <h3>Python</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="programming">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="code-2"></i></span>
+                <h3>C</h3>
+              </div>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="70%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="programming">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="database"></i></span>
+                <h3>SQL</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-item glass-card" data-category="datascience">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="table"></i></span>
+                <h3>Pandas & NumPy</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="datascience">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="bar-chart-3"></i></span>
+                <h3>Data Visualization</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="datascience">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="cpu"></i></span>
+                <h3>Machine Learning</h3>
+              </div>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="65%"></div></div>
+          </div>
+
+          <!-- Web Dev -->
+          <div class="skill-item glass-card" data-category="webdev">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="html5"></i></span>
+                <h3>HTML & CSS</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="webdev">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="square-terminal"></i></span>
+                <h3>JavaScript</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="webdev">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="atom"></i></span>
+                <h3>React</h3>
+              </div>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="webdev">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="globe"></i></span>
+                <h3>Next.js</h3>
+              </div>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="70%"></div></div>
+          </div>
+
+          <!-- Marketing -->
+          <div class="skill-item glass-card" data-category="marketing">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="search-code"></i></span>
+                <h3>SEO</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="marketing">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="file-edit"></i></span>
+                <h3>Content Marketing</h3>
+              </div>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="marketing">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="instagram"></i></span>
+                <h3>Social Media Marketing</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="marketing">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="shopping-cart"></i></span>
+                <h3>Amazon Listing</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-item glass-card" data-category="softskills">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="message-square"></i></span>
+                <h3>Communication</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="softskills">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="users"></i></span>
+                <h3>Leadership</h3>
+              </div>
+              <span class="skill-level">Intermediate</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="softskills">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="puzzle"></i></span>
+                <h3>Problem Solving</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item glass-card" data-category="softskills">
+            <div class="skill-title-row">
+              <div class="skill-info-header">
+                <span class="skill-icon"><i data-lucide="handshake"></i></span>
+                <h3>Teamwork</h3>
+              </div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <div class="skill-progress"><div class="skill-bar" data-width="85%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <a href="index.html" class="footer-logo">
+          Naina Kumari
+        </a>
+        <p>IIT Patna CS & Data Analytics student passionate about turning data into insight and design into functional products.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials-col">
+        <h4>Follow Me</h4>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/naina-kumari-iitp?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn Profile" class="brand-linkedin"><i data-lucide="linkedin"></i></a>
+          <a href="https://github.com/its-nainajha123" target="_blank" aria-label="GitHub Profile" class="brand-github"><i data-lucide="github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>Designed and Developed by Naina Kumari &copy; 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script initialization -->
+  <script src="js/script.js"></script>
+</body>
+</html>

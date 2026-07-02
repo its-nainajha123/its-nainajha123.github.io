@@ -122,7 +122,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollProgress = document.getElementById('scroll-progress');
   const navbar = document.getElementById('navbar');
   const navLinks = document.querySelectorAll('.nav-links a');
-  const sections = document.querySelectorAll('section');
+
+  // Highlight active link based on current path
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    const linkPath = link.getAttribute('href');
+    if (linkPath === currentPath || (currentPath === 'index.html' && linkPath === '')) {
+      link.classList.add('active');
+    }
+  });
 
   window.addEventListener('scroll', () => {
     const windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -142,23 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.remove('scrolled');
       }
     }
-
-    // Active Section Link Highlighting
-    let currentSectionId = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.offsetHeight;
-      if (windowScroll >= sectionTop && windowScroll < sectionTop + sectionHeight) {
-        currentSectionId = section.getAttribute('id');
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentSectionId}`) {
-        link.classList.add('active');
-      }
-    });
   });
 
 
@@ -426,115 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  // ════════════════════════════════════════════
-  // 10. CERTIFICATIONS CAROUSEL SYSTEM
-  // ════════════════════════════════════════════
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(document.querySelectorAll('.carousel-slide'));
-  const nextBtn = document.querySelector('.carousel-control.next');
-  const prevBtn = document.querySelector('.carousel-control.prev');
-  const indicatorsContainer = document.querySelector('.carousel-indicators');
-
-  if (track && slides.length > 0) {
-    let currentSlideIndex = 0;
-    
-    // Create dots indicator
-    const createIndicators = () => {
-      indicatorsContainer.innerHTML = '';
-      const visibleSlidesCount = slides.length;
-      
-      for (let i = 0; i < visibleSlidesCount; i++) {
-        const dot = document.createElement('div');
-        dot.classList.add('indicator-dot');
-        if (i === 0) dot.classList.add('active');
-        dot.setAttribute('data-slide', i);
-        
-        dot.addEventListener('click', () => {
-          moveToSlide(i);
-        });
-        
-        indicatorsContainer.appendChild(dot);
-      }
-    };
-
-    const moveToSlide = (index) => {
-      currentSlideIndex = index;
-      const amountToMove = slides[index].offsetLeft;
-
-      track.style.transform = `translateX(-${amountToMove}px)`;
-
-      // Update dots indicators
-      const dots = Array.from(indicatorsContainer.querySelectorAll('.indicator-dot'));
-      dots.forEach(dot => dot.classList.remove('active'));
-      if (dots[index]) {
-        dots[index].classList.add('active');
-      }
-
-      // Toggle controls disabled statuses
-      if (prevBtn && nextBtn) {
-        prevBtn.style.opacity = index === 0 ? '0.5' : '1';
-        prevBtn.style.pointerEvents = index === 0 ? 'none' : 'auto';
-        
-        const totalPages = slides.length;
-        nextBtn.style.opacity = index === totalPages - 1 ? '0.5' : '1';
-        nextBtn.style.pointerEvents = index === totalPages - 1 ? 'none' : 'auto';
-      }
-    };
-
-    createIndicators();
-    moveToSlide(0);
-
-    // Event listeners
-    nextBtn.addEventListener('click', () => {
-      const totalPages = slides.length;
-      if (currentSlideIndex < totalPages - 1) {
-        moveToSlide(currentSlideIndex + 1);
-      }
-    });
-
-    prevBtn.addEventListener('click', () => {
-      if (currentSlideIndex > 0) {
-        moveToSlide(currentSlideIndex - 1);
-      }
-    });
-
-    // Handle screen resize to rebuild indicators
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        track.style.transform = 'translateX(0px)';
-        createIndicators();
-        moveToSlide(0);
-      }, 100);
-    });
-
-    // Touch Swipe Support for Mobile
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    track.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-
-    track.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      handleSwipe();
-    }, { passive: true });
-
-    const handleSwipe = () => {
-      const swipeThreshold = 50;
-      const totalPages = slides.length;
-      
-      if (touchStartX - touchEndX > swipeThreshold) {
-        // Swipe Left -> Next
-        if (currentSlideIndex < totalPages - 1) moveToSlide(currentSlideIndex + 1);
-      } else if (touchEndX - touchStartX > swipeThreshold) {
-        // Swipe Right -> Prev
-        if (currentSlideIndex > 0) moveToSlide(currentSlideIndex - 1);
-      }
-    };
-  }
+  // Obsolete carousel system removed
 
   // ════════════════════════════════════════════
   // 12. CONTACT FORM SUBMISSION HANDLER

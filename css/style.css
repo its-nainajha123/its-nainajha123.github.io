@@ -2287,3 +2287,41 @@ body.dark-theme .brand-github:hover {
   border-color: transparent !important;
   box-shadow: 0 0 15px rgba(225, 48, 108, 0.45) !important;
 }
+
+/* ==========================================================================
+   SUBPAGE LAYOUTS & BANNERS
+   ========================================================================== */
+.page-header {
+  padding: 8rem 0 3.5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--card-border);
+  background: rgba(var(--primary-rgb), 0.01);
+}
+
+.page-header h1 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  letter-spacing: -1px;
+}
+
+body.light-theme .page-header h1 {
+  color: var(--primary-color);
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Fix spacing for pages with no hero intro */
+.subpage-content {
+  padding: 4rem 0 6rem 0;
+}
